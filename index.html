@@ -25,6 +25,18 @@ ul {
   display: inline-block;
 }
 
+.column {
+    float: left;
+    width: 20%;
+    padding: 30px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 body{
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     margin-left: 75px;
@@ -143,12 +155,22 @@ tr:nth-child(even) {
             Written in Python (3.6.9) and powered by a localhost mySQL server.
             <br>
             <div id="terminal_chess images">
-                <ul>
-                    <li><img src="tc0.png"></li>
-                    <li><img src="tc1.png"></li>
-                    <li><img src="tc2.png"></li>
-                    <li><img src="tc3.png"></li>
-                </ul>
+                <center>
+                <div class="row">                
+                    <div class="column">
+                        <img src="tc0.png" style="width:100%">
+                    </div>
+                    <div class="column">
+                        <img src="tc1.png" style="width:100%">
+                    </div>
+                    <div class="column">
+                        <img src="tc2.png" style="width:100%">
+                    </div>
+                    <div class="column">
+                        <img src="tc3.png" style="width:100%">
+                    </div>
+                </div>
+                </center>
             </div>
             <i class="material-icons">link</i> <a href="https://github.com/frroossst/terminal_chess/" target="_blank">GitHub Link</a>
 
